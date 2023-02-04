@@ -531,6 +531,15 @@ spec:
         - $formkit: menuRadio
           name: menu
           label: 底部相关链接
+        - $formkit: radio
+          name: showAgreement
+          label: 显示版权协议图标
+          value: false
+          options:
+            - label: 打开
+              value: true
+            - label: 关闭
+              value: false
 
     - group: post
       label: 文章
@@ -620,17 +629,8 @@ spec:
       help: 右下角 snackbar 弹窗
       formSchema:
         - $formkit: radio
-          name: switch
-          label: 开关（WIP）
-          value: true
-          options:
-            - label: 打开
-              value: true
-            - label: 关闭
-              value: false
-        - $formkit: radio
           name: introduction
-          label: 介绍框（WIP）
+          label: 介绍框
           value: true
           options:
             - label: 打开

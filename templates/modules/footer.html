@@ -64,7 +64,7 @@
                 </a>
                 <a class="footer-banner-link cc"
                    th:href="${theme.config.basics.copyrightAgreement}"
-                   th:if="${not #strings.isEmpty(theme.config.basics.copyrightAgreement)}"
+                   th:if="${not #strings.isEmpty(theme.config.basics.copyrightAgreement) and theme.config.footer.showAgreement}"
                    title="cc协议">
                     <i class="iconfont icon-cc"></i>
                     <i class="iconfont icon-by"></i>
@@ -75,7 +75,7 @@
         </div>
     </div>
     <!-- 暂时不需要弹窗 -->
-    <div id="introduction-window">
+    <div id="introduction-window" th:if="${theme.config.snackbar.introduction}">
         <div class="introduction-window-title" th:text="${theme.config.snackbar.introductionTitle}"></div>
         <div class="introduction-window-content">
             <span class="introduction-tip" th:text="${theme.config.snackbar.introductionTip}"></span>

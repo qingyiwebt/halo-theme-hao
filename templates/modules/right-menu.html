@@ -43,7 +43,8 @@
                 <i class="iconfont icon-search"></i>
                 <span>站内搜索</span>
             </div>
-            <div class="rightMenu-item" id="menu-searchBaidu">
+            <div class="rightMenu-item" id="menu-searchBaidu"
+                th:if="${theme.config.rightMenu.enableBaiduSearch}">
                 <i class="iconfont icon-baidu"></i>
                 <span>百度搜索</span>
             </div>

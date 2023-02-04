@@ -664,6 +664,15 @@ spec:
               value: true
             - label: 关闭
               value: false
+        - $formkit: radio
+          name: enableBaiduSearch
+          label: 启用百度搜索
+          value: false
+          options:
+            - label: 打开
+              value: true
+            - label: 关闭
+              value: false
 
     - group: link
       label: 友链
